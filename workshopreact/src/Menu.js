@@ -2,12 +2,22 @@ const data = require('./data.json')
 
 function Menu() {
     const pizzaList = data.Pizza.map((pizzaItem) =>
-        <div>
-            <h3> { pizzaItem.name } </h3>
-            <p> Price: { pizzaItem.price } </p>
-            <p> Ingredients: { pizzaItem.ingredients } </p>
-            <img src={pizzaItem.image} alt="pizza"/>
+    <div class="row">
+        <div class="col s12 m2">
+            <div class="card teal">
+                <div class="card-image">
+                    <img src={pizzaItem.image} />
+                    <span class="card-title"> {pizzaItem.name} </span>
+                </div>
+                <div class="card-content">
+                    <p> {pizzaItem.ingredients} </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">order now</a>
+                </div>
+            </div>
         </div>
+    </div>
     );
     return (
         <div class="menu">
