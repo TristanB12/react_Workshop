@@ -1,6 +1,8 @@
 import Contact from './Contact'
 import Home from './Home'
 import Menu from './Menu'
+import logo from './img/logoPizza.png'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,9 +17,11 @@ function  App() {
         <nav>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <div className="nav-wrapper">
+          <a href="#!" className="brand-logo">My react App
+            <img src={logo} height="60" width="60" className="logo" />
+          </a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li> <Link to="/contact">Contact</Link></li>
             <li> <Link to="/home">Home</Link></li>
             <li> <Link to="/menu">Menu</Link></li>
@@ -40,6 +44,5 @@ function  App() {
     </Router>
 	);
 }
-
 
 export  default  App;

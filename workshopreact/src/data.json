@@ -10,13 +10,13 @@
         {
             "name": "4 Fromages",
             "price": "8€",
-            "ingredients": "Tomate, Double Fromage, Chèvre, Brie, Bleu",  
+            "ingredients": "Tomate, Double Fromage, Chèvre, Brie, Bleu",
             "image": "https://image.noelshack.com/fichiers/2021/01/2/1609845957-fromages.png"
         },
         {
             "name": "Chorizo",
             "price": "9€",
-            "ingredients": "Tomate, Double Fromage, Chorizo, Bacon, Œuf",   
+            "ingredients": "Tomate, Double Fromage, Chorizo, Bacon, Œuf",
             "image": "https://image.noelshack.com/fichiers/2021/01/2/1609845958-americaine.png"
         },
         {
